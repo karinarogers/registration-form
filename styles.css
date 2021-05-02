@@ -1,0 +1,176 @@
+/*========Main Styles =========
+===============================*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  margin: 0;
+  color: rgb(109, 109, 109);
+  font-size: 1em;
+}
+h1 {
+  background-image: linear-gradient(
+    155deg,
+    rgb(36, 45, 58),
+    rgb(41, 199, 199),
+    rgb(36, 45, 58)
+  );
+  color: #fff;
+  padding: 1em;
+  width: 100%;
+  margin: 0;
+  text-transform: uppercase;
+}
+/*==General Styles==*/
+h1,
+h2,
+p,
+footer {
+  text-align: center;
+}
+
+.dark {
+  color: rgb(36, 45, 58);
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.intro {
+  border-bottom: rgb(36, 45, 58) solid 3px;
+  margin: 0 12px 2px;
+  padding: 1.5em 0;
+}
+
+/*==Contact Info Section==*/
+input::placeholder {
+  text-align: right;
+  font-style: italic;
+}
+
+.contact_info input,
+select,
+textarea {
+  display: block;
+  width: 100%;
+  background-color: rgb(236, 236, 236);
+  border: rgb(236, 236, 236) 2px solid;
+  border-radius: 3px;
+  padding: 1.1em;
+  margin: 12px 0;
+  text-align: left;
+  color: rgb(109, 109, 109);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: rgb(26, 61, 97) 2px solid;
+  border-radius: 3px;
+  box-shadow: 0 0 8px rgb(194, 194, 202);
+  transition: all 0.3s ease-in-out;
+}
+
+#zip {
+  width: 50%;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+}
+
+legend {
+  border-top: rgb(36, 45, 58) solid 2px;
+  padding: 1.5em 0;
+  width: 100%;
+}
+
+/*==Newsletter section==*/
+.flex-small {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.newletter-sections {
+  margin: 2em 0;
+}
+
+textarea {
+  width: 100%;
+  background-color: rgb(236, 236, 236);
+  border: none;
+  border-radius: 3px;
+  font-family: "Merriweather", serif;
+}
+
+/*==Button==*/
+button {
+  display: block;
+  background: linear-gradient(
+    155deg,
+    rgb(36, 45, 58),
+    rgb(41, 199, 199),
+    rgb(36, 45, 58)
+  );
+  color: white;
+  font-size: 1.2em;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  padding: 20px;
+}
+
+/*==Footer==*/
+footer {
+  margin: 2em;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+/*==========Media Queries=========
+==================================*/
+
+@media screen and (min-width: 768px) {
+  .flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+
+  .flex label {
+    width: 20%;
+  }
+
+  .contact_info input,
+  .contact_info select {
+    max-width: 80%;
+  }
+
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  legend {
+    padding: 1.5em 0 0 0;
+  }
+
+  .newletter-sections-large {
+    margin: 2em 0;
+  }
+}
